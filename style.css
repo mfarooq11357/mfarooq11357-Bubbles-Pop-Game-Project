@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    font-family: 'Carter One', sans-serif;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top, #1db9ff, #a2a0ff, #fb7ad4, #ff677a, #f48603);
+    padding: 10px; /* Added padding to avoid content touching edges */
+}
+
+#inner {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px; /* Added max-width for better large screen display */
+    height: 85%;
+    background-color: white;
+}
+
+#upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(
+        to right top,
+        #1db9ff,
+        #a2a0ff,
+        #f702ad,
+        #bd2d3e,
+        #90e65f
+      );
+    padding: 0 10px; /* Added padding */
+}
+
+.class {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 42px;
+    width: 17%;
+    min-width: 80px; /* Added min-width to ensure readability on smaller screens */
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 10px; /* Added padding */
+}
+
+.sphere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin: 2px;
+    background: linear-gradient(to right top, #1dff1d, #a2a0ff, #f702ad, #dfee1300, #90e65f);
+    transition: transform 0.2s ease;
+}
+
+.sphere:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.sphere:active {
+    transform: scale(1.1);
+}
+
+#play-button, #restart-button, #Instruction, #score-history, #go-back{
+    background: linear-gradient(to right top, #1dff1d, #a2a0ff, #f702ad, #dfee1300, #90e65f);
+    height: 50px;
+    width: 271px;
+    border-radius: 39px;
+    cursor: pointer;
+    min-width: 120px; /* Added min-width for small screens */
+    min-height: 55px; /* Added min-height for small screens */
+}
+
+#final-score {
+   
+    font-size: 20px;
+}
+#lower .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pre-history, .gdhduhdebx, #game-over{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+.gdhduhdebx{
+    gap: 50px;
+    font-weight: bold;
+}
+#game-over{
+gap: 40px;
+}
